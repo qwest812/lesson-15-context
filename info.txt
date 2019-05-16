@@ -1,0 +1,4 @@
+каррирование
+http://prgssr.ru/development/vvedenie-v-karrirovanie-v-javascript.html
+jsdoc
+http://usejsdoc.org/

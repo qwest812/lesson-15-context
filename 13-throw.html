@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генерация ошибок</title>
+</head>
+<body>
+<script>
+    var data = '{ "age": 30 }'; // данные неполны
+
+    try {
+
+        var user = JSON.parse(data); // <-- выполнится без ошибок
+
+        if (!user.name) {
+            console.log(user);
+            throw new Error("Данные некорректны");
+        }
+
+        console.log(user.name);
+
+    } catch (e) {
+        console.log(e.name);
+        console.log(e.message);
+        console.log(e.stack);
+    }
+</script>
+</body>
+</html>

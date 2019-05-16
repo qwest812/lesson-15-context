@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Реализовать функцию mul с и без использования bind
+<script>
+    function mul(a,b) {
+        return a*b;
+    }
+
+    var mul2=mul.bind(null,2);
+    console.log(mul2(10));
+</script>
+</body>
+</html>

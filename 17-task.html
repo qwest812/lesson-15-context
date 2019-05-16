@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let user = {
+        firstName:"Iaroslav",
+        lastName:"Rybachuk",
+};
+
+user.lastName='test';
+
+    let js= (JSON.stringify(user))+123;
+    console.log(js);
+
+    try{
+        let jsp=JSON.parse(js)
+    }catch (e) {
+        console.log(e.message);
+    }
+
+
+
+
+</script>
+</body>
+</html>

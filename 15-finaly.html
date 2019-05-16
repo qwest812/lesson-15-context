@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Секция finally не обязательна, но если она есть, то она выполняется всегда:-->
+<!---->
+<!--после блока try, если ошибок не было,-->
+<!--после catch, если они были.-->
+<script>
+    try {
+        alert( 'try' );
+        if (confirm('Сгенерировать ошибку?')) BAD_CODE();
+    } catch (e) {
+        alert( 'catch' );
+    } finally {
+        alert( 'finally' );
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><script>
+    function logArray(params1) {
+        console.log(this); console.log(params1);
+    }
+
+    console.log(logArray("123"));
+
+    let foo2 =logArray.bind("456");
+    console.log(foo2());
+</script>
+
+</body>
+</html>

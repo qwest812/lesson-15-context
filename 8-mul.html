@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Реализовать функцию mul с и без использования bind
+<script>
+    function mul(first) {
+        return function (second) {
+            return first+second;
+        }
+    }
+
+    console.log(mul(2)(3));
+</script>
+</body>
+</html>

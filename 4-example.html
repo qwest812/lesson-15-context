@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Вызвать функцию таким образом, чтобы получить тест "This is Ivan Ivanov" передавая ключ вывода
+    let obj={
+        phrase:"this is",
+    };
+
+    let arr=["Ivanov","ivan"];
+    
+    
+    function foo(firstName,LastName) {
+        // obj.call(this);
+        console.log(this.phrase + firstName + LastName);
+    }
+
+    foo.apply(obj,arr);
+
+
+</script>
+</body>
+</html>

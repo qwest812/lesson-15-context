@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function userInfo(first, second,third) {
+        console.log(first);
+        console.log(this[first]);
+        console.log(this[second]);
+        console.log(this[third]);
+        console.log(this);
+    }
+    let  User={
+        name: "Petia",
+        sname: "Petrov",
+        age: 25,
+    };
+
+    // UserInfo.call(User,'name','sname');
+    userInfo.call(User,'name','sname','age');
+    userInfo("1","2");
+
+    console.log([11]);
+    let q={
+        0:"ads",
+        1:"ds"
+    };
+    console.log(q);
+    Array.prototype.forEach.call(q,function (e) {
+        console.log(e);
+    });
+</script>
+</body>
+</html>

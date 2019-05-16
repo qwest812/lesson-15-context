@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var data = "Has Error"; // в данных ошибка
+
+    try {
+
+        var user = JSON.parse(data); // <-- ошибка при выполнении
+        alert( user.name ); // не сработает
+    } catch (e) {
+        // ...выполнится catch
+        console.log('Ошибка ' + "\n" + e.name + "\n" + ":" + e.message + "\n" + e.stack); // (3) <--
+        console.log("Извините, в данных ошибка, мы попробуем получить их ещё раз");
+    }
+</script>
+</body>
+</html>

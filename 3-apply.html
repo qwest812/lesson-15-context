@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function Human(firstName, secondName,d,f,g,h,j) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.d = d;
+        this.g = g;
+    }
+
+
+
+function Student() {
+    console.log(arguments);
+
+    // [1,2]
+    Human.apply(this,[1,2,3,4,5,6,7]);
+}
+
+
+
+    var student1 = new Student('test1', 'test2');
+
+    console.log(student1.firstName);
+    console.log(student1.secondName);
+    console.log(student1.d);
+    console.log(student1.g);
+
+
+
+</script>
+</body>
+</html>
